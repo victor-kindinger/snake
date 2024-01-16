@@ -85,14 +85,15 @@ function animate()
             localStorage.setItem('record', snakeSize);
         }
 
+        c.fillText(`Recorde: ${localStorage.getItem('record')}`, 275, 283);
+        c.strokeText(`Recorde: ${localStorage.getItem('record')}`, 275, 283);
+
         if (newRecord)
         {
-            c.fillText(`New record!`, 275, 335);
-            c.strokeText(`New record!`, 275, 335);
+            c.fillText(`Novo recorde!`, 275, 335);
+            c.strokeText(`Novo recorde!`, 275, 335);
         }
-
-        c.fillText(`Highest record: ${localStorage.getItem('record')}`, 275, 283);
-        c.strokeText(`Highest record: ${localStorage.getItem('record')}`, 275, 283);
+        
     }
 
     //Score
